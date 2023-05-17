@@ -39,6 +39,7 @@ nav>button {
     padding: 0px;
     display: grid;
 
+
 }
 
 button>svg {
@@ -49,17 +50,30 @@ button>svg {
 
 .elem1 {
     position: absolute;
-    height: 50%;
+    height: 500px;
     width: 100%;
     background-color: rgb(72, 72, 218);
-    display: none;
     top: 0px;
-    z-index: -10;
+    -moz-transform: translateX(200px);
+    transition: transform 1.5s ease-in-out;
+    box-shadow: -2px -2px 3px;
+    font-size: 30px;
+    padding-left: 20px;
 }
 
-nav>button:checked+.elem1 {
+nav:hover .elem1 {
     display: block;
+    z-index: 5;
+    -moz-transform: translateX(-100px);
+    color: white;
+    box-shadow: -2px -2px 3px;
 }
+
+li {
+    color: white;
+    font-size: 20px;
+}
+
 
 .blanc {
     grid-column: 5/9;
@@ -155,6 +169,7 @@ nav>button:checked+.elem1 {
     font-size: 20px;
     font-weight: lighter;
     background-color: white;
+    height: 100%;
 }
 
 @-moz-keyframes wiggle {
@@ -242,9 +257,10 @@ address>svg {
     margin-top: 10px;
     margin-right: 10px;
     color: white;
-    height:15%;
-    width:auto;
+    height: 15%;
+    width: auto;
 }
-address>svg:hover{
-    height:18%;
+
+address>svg:hover {
+    height: 18%;
 }
