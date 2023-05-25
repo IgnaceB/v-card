@@ -127,13 +127,10 @@ body {
     width: 30%;
 
 }
-.test{
+.review{
 width: 100%;
 display: flex;
-}
-.gauche {
-    width: 50%;
-    display:block;
+justify-content: space-between;
 }
 .droite{
     width:50%;
@@ -143,6 +140,7 @@ display: flex;
 .rating svg{
     width:20px;
     padding-left: 10px;
+    padding-top: 15px;
     color:#ffb70b;
 }
 .rating{
@@ -151,7 +149,8 @@ display: flex;
     margin:0px;
     padding-left:15px;
     line-height: 27px;
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
+    width:50%;
 }
 .rating h3{
     margin:0px;
