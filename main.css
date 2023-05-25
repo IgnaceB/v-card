@@ -125,6 +125,7 @@ body {
 .column3 svg:hover {
     color: #fef203;
     width: 30%;
+    padding-top:0%;
 
 }
 .review{
